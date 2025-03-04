@@ -1,3 +1,3 @@
-# QCLIP: Query based CLIP with Positonal-class for Zero-Shot Anomaly Detection in Medical Images
+# IQE-CLIP: Instance-aware Query Embedding for Zero/Few-shot Anomaly Detection in Medical Domain
 
-Official implementation of "QCLIP: Query based CLIP with Positonal-class for Zero-Shot Anomaly Detection in Medical Images" is comming soon.
+Official implementation of "QIQE-CLIP: Instance-aware Query Embedding for Zero/Few-shot Anomaly Detection in Medical Domain" is comming soon.
