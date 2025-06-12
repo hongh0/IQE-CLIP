@@ -1,15 +1,18 @@
-# IQE-CLIP: Instance-aware Query Embedding for Zero/Few-shot Anomaly Detection in Medical Domain
+<div align="center">
 
-Official implementation of "IQE-CLIP: Instance-aware Query Embedding for Zero/Few-shot Anomaly Detection in Medical Domain" is comming soon.
+# IQE-CLIP: Instance-aware Query Embedding for Zero/Few-shot Anomaly Detection in Medical Domain
+[Hong Huang](https://hongh0.github.io/), [Weixiang Sun](https://weixiang-sun.github.io/), Zhijian Wu, Jingwen Niu, [Donghuan Lu](https://scholar.google.com/citations?hl=en&user=3Kp_9lwAAAAJ), [Xian Wu](https://scholar.google.com/citations?hl=en&user=lslB5jkAAAAJ), [Yefeng Zheng](https://scholar.google.com/citations?user=vAIECxgAAAAJ&hl=en)
+
 
 [Paper Link]()
+</div>
 
-
+The official PyTorch implementation of the paper "IQE-CLIP: Instance-aware Query Embedding for Zero/Few-shot Anomaly Detection in Medical Domain".
 
 <center><img src="assets/IQE_CLIP.png "width="100%"></center>
 
 **Abstract**:  Recently, the rapid advancements of vision-language models, such as CLIP, leads to significant progress in zero-/few-shot anomaly detection (ZFSAD) tasks. However, most existing CLIP-based ZFSAD methods commonly assume prior knowledge of categories and rely on carefully crafted prompts tailored to specific scenarios. While such meticulously designed text prompts effectively capture semantic information in the textual space, they fall short of distinguishing normal and anomalous instances within the joint embedding space. Moreover, these ZFSAD methods are predominantly explored in industrial scenarios, with few efforts conducted to medical tasks. 
-To this end, we propose an innovative framework for ZFSAD tasks in medical domain, denoted as IQE-CLIP. We reveal that query embeddings, which incorporate both textual and instance-aware visual information, are better indicators for abnormalities. Specifically, we first introduce class-based prompting tokens and learnable prompting tokens for better adaptation of CLIP to the medical domain. Then, we design an instance-aware query module (IQM) to extract region-level contextual information from both text prompts and visual features, enabling the generation of query embeddings that are more sensitive to anomalies. Extensive experiments conducted on six medical datasets demonstrate that IQE-CLIP achieves state-of-the-art performance on both zero-shot and few-shot tasks.
+To this end, we propose an innovative framework for ZFSAD tasks in medical domain, denoted as **IQE-CLIP**. We reveal that query embeddings, which incorporate both textual and instance-aware visual information, are better indicators for abnormalities. Specifically, we first introduce class-based prompting tokens and learnable prompting tokens for better adaptation of CLIP to the medical domain. Then, we design an instance-aware query module (IQM) to extract region-level contextual information from both text prompts and visual features, enabling the generation of query embeddings that are more sensitive to anomalies. Extensive experiments conducted on six medical datasets demonstrate that IQE-CLIP achieves state-of-the-art performance on both zero-shot and few-shot tasks.
 
 
 ## 🛠️  Get Started
@@ -17,7 +20,7 @@ To this end, we propose an innovative framework for ZFSAD tasks in medical domai
 ### 🔧 Installation
 To set up the IQE-CLIP environment, follow one of the methods below:
 
-- Clone the repository::
+- Clone the repository:
   ```shell
   git clone https://github.com/hongh0/IQE-CLIP.git && cd IQE-CLIP
   ```
@@ -58,25 +61,24 @@ To set up the IQE-CLIP environment, follow one of the methods below:
     tar -xvf Chest.tar.gz
     ```
 4. The data file structure is as followed:
-```
-data/
-├── Brain_AD/
-│   ├── valid/
-│   └── test/
-├── ...
-├── Retina_RESC_AD/
-│   ├── valid/
-│   └── test/
-...
-dataset/
-├── fewshot_seed/
-│   ├── Brain/
-│   ├── ...
-│   └── Retina_RESC/
-├── medical_few.py
-└── medical_zero.py
-```
-
+    ```
+    data/
+    ├── Brain_AD/
+    │   ├── valid/
+    │   └── test/
+    ├── ...
+    ├── Retina_RESC_AD/
+    │   ├── valid/
+    │   └── test/
+    ...
+    dataset/
+    ├── fewshot_seed/
+    │   ├── Brain/
+    │   ├── ...
+    │   └── Retina_RESC/
+    ├── medical_few.py
+    └── medical_zero.py
+    ```
 
 ### 🚀 Train
 Run the following command to train the model in zero-shot mode on a specific dataset (e.g., ``` Brain``` ).
@@ -93,7 +95,6 @@ python train_zero.py \
   --deep_prompt_len 1 \
   --use_global \
   --total_d_layer_len 11
-
 ```
 Use the following command to train the model in few-shot mode.
 This setting assumes a small number of anomaly examples are available (e.g., ``` K=4``` ),
@@ -112,7 +113,6 @@ python train_few.py \
   --deep_prompt_len 1 \
   --use_global \
   --total_d_layer_len 11
-
 ```
 
 ### 🔍 Test
@@ -130,7 +130,6 @@ python test_zero.py \
   --deep_prompt_len 1 \
   --use_global \
   --total_d_layer_len 11
-
 ```
 Use the following command to evaluate the model in few-shot mode.
 ``` 
@@ -145,7 +144,6 @@ python test_few.py \
   --deep_prompt_len 1 \
   --use_global \
   --total_d_layer_len 11
-
 ```
 
 ## Acknowledgement
@@ -157,7 +155,7 @@ Our work is largely inspired by the following projects. Thanks for their admirin
 - [BMAD](https://github.com/DorisBao/BMAD)
 - [MVFAD](https://github.com/MediaBrain-SJTU/MVFA-AD)
 - [VCPCLIP](https://github.com/xiaozhen228/VCP-CLIP)
--[AdaCLIP](https://github.com/caoyunkang/AdaCLIP)
+- [AdaCLIP](https://github.com/caoyunkang/AdaCLIP)
 
 ## Citation
 
