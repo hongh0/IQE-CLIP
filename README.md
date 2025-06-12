@@ -19,7 +19,7 @@ To set up the IQE-CLIP environment, follow one of the methods below:
 
 - Clone the repository::
   ```shell
-  git clone https://github.com/caoyunkang/AdaCLIP.git && cd AdaCLIP
+  git clone https://github.com/hongh0/IQE-CLIP.git && cd IQE-CLIP
   ```
 - Create a conda environment and install dependencies:   
   ```shell
