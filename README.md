@@ -1,7 +1,7 @@
 <div align="center">
 
 # IQE-CLIP: Instance-aware Query Embedding for Zero/Few-shot Anomaly Detection in Medical Domain
-[Hong Huang](https://hongh0.github.io/), [Weixiang Sun](https://weixiang-sun.github.io/), Zhijian Wu, Jingwen Niu, [Donghuan Lu](https://scholar.google.com/citations?hl=en&user=3Kp_9lwAAAAJ), [Xian Wu](https://scholar.google.com/citations?hl=en&user=lslB5jkAAAAJ), [Yefeng Zheng](https://scholar.google.com/citations?user=vAIECxgAAAAJ&hl=en)
+[Hong Huang](https://hongh0.github.io/), [Weixiang Sun](https://weixiang-sun.github.io/), [Zhijian Wu](), [Jingwen Niu](), [Donghuan Lu](https://scholar.google.com/citations?hl=en&user=3Kp_9lwAAAAJ), [Xian Wu](https://scholar.google.com/citations?hl=en&user=lslB5jkAAAAJ), [Yefeng Zheng](https://scholar.google.com/citations?user=vAIECxgAAAAJ&hl=en)
 
 
 [Paper Link]()
