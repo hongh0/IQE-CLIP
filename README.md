@@ -4,7 +4,7 @@
 [Hong Huang](https://hongh0.github.io/), [Weixiang Sun](https://weixiang-sun.github.io/), [Zhijian Wu](), [Jingwen Niu](), [Donghuan Lu](https://scholar.google.com/citations?hl=en&user=3Kp_9lwAAAAJ), [Xian Wu](https://scholar.google.com/citations?hl=en&user=lslB5jkAAAAJ), [Yefeng Zheng](https://scholar.google.com/citations?user=vAIECxgAAAAJ&hl=en)
 
 
-[Paper Link]()
+[Paper Link](https://arxiv.org/abs/2506.10730)
 </div>
 
 The official PyTorch implementation of the paper "IQE-CLIP: Instance-aware Query Embedding for Zero/Few-shot Anomaly Detection in Medical Domain".
@@ -162,6 +162,14 @@ Our work is largely inspired by the following projects. Thanks for their admirin
 If you find this project helpful for your research, please consider citing the following BibTeX entry.
 
 ```BibTex
-
+@misc{huang2025iqeclip,
+    title={IQE-CLIP: Instance-aware Query Embedding for Zero-/Few-shot Anomaly Detection in Medical Domain}, 
+    author={Hong Huang and Weixiang Sun and Zhijian Wu and Jingwen Niu and Donghuan Lu and Xian Wu and Yefeng Zheng},
+    year={2025},
+    eprint={2506.10730},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2506.10730}, 
+}
 
 ```
